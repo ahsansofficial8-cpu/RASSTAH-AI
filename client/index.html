@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/compass.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raastah (راستہ) — Intelligent Mountain Travel, Pass Intelligence & Itinerary Planner</title>
+    <meta name="description" content="Pakistan's first climate-aware, altitude-intelligent expedition and itinerary planner. Babusar & Khunjerab road clearances, Open-Meteo swaps, and verified local drivers." />
+    <script>
+      (() => {
+        try {
+          const preference = localStorage.getItem('raastah-theme');
+          const theme = ['light', 'dark'].includes(preference)
+            ? preference
+            : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+        } catch {
+          document.documentElement.dataset.theme = 'light';
+          document.documentElement.style.colorScheme = 'light';
+        }
+      })();
+    </script>
+    <!-- Google Fonts load with system fallbacks defined in the application stylesheet. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Leaflet Map Stylesheets for robust map tile and marker rendering -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
