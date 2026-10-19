@@ -1,20 +1,22 @@
 # RAASTAH (راستہ) — The Intelligent Way 🇵🇰
-### Pakistan's Premier Climate-Aware, Altitude-Intelligent Travel & Expedition Platform
+### NYLP AI Hackathon 2026 Official Submission
+**Theme:** *Building AI-Powered Products for Real-World Impact*
 
+[![Hackathon](https://img.shields.io/badge/NYLP_Hackathon-2026_Submission-purple)](https://nylp-hackathon-rulebook.lovable.app/)
 [![Node.js Version](https://img.shields.io/badge/Node.js-v20%2B-brightgreen)](https://nodejs.org/)
 [![React Version](https://img.shields.io/badge/React-19.0-blue)](https://react.dev/)
 [![Gemini AI](https://img.shields.io/badge/AI-Google%20Gemini%20Flash-orange)](https://aistudio.google.com/)
-[![License](https://img.shields.io/badge/License-Proprietary-teal)]()
+[![Deployment](https://img.shields.io/badge/Vercel-Deployed-black)](https://vercel.com/)
 
 ---
 
-## 🏔️ Executive Summary
+## 🎯 Official Hackathon Problem Statement & Solution
 
-**RAASTAH (`راستہ`)** is a next-generation travel intelligence and expedition operating system engineered specifically for Pakistan's rugged alpine geography, high-altitude passes, and diverse cultural corridors. 
+### The Problem
+Traditional global travel platforms fail in Pakistan because they lack hyper-local topological intelligence: they cannot predict whether Babusar Pass or Deosai Plains are blocked under snow, they don't know the exact 4x4 jeep tariffs, they provide zero cellular carrier guidance (SCOM 4G, Zong, Jazz) in alpine valleys, and they offer no real-time safety mechanisms for solo female travelers in remote regions.
 
-Traditional global travel platforms fail in Pakistan because they lack hyper-local topological intelligence: they cannot predict whether Babusar Pass is open under snow, they don't know the exact 4x4 jeep union tariffs from Raikot Bridge to Fairy Meadows, and they provide zero carrier coverage guidance across SCOM 4G, Zong, and Jazz in Gilgit-Baltistan and Khyber Pakhtunkhwa.
-
-**RAASTAH solves this completely** by fusing real-time satellite meteorology, OpenStreetMap topological routing, Google Gemini generative AI, and a verified network of local mountain drivers and alpine guides into a single cinematic platform.
+### The Solution: RAASTAH (راستہ)
+RAASTAH is an end-to-end, AI-powered expedition intelligence platform engineered specifically for Pakistan's rugged alpine geography, high-altitude passes, and cultural corridors. It fuses real-time satellite meteorology, OpenStreetMap topological routing, Google Gemini generative AI, multi-lingual audio synthesis across 15 regional languages, and verified mountain operators into a single full-stack application.
 
 ---
 
@@ -186,6 +188,44 @@ npm run build
 
 ---
 
+---
+
+## 🧠 AI Methodology & Model Architecture
+
+RAASTAH uses a hybrid edge-and-cloud AI architecture to ensure responsiveness, safety, and reliability in remote environments:
+
+1. **Google Gemini Generative AI (`gemini-3.8-flash`, `gemini-flash-latest`)**:
+   - Powering the **Raastah AI Expedition Copilot** with a grounded RAG knowledge base covering 99 Pakistani destinations, elevations, seasonal passes, and jeep tariffs.
+   - Dynamic itinerary generation (`/api/tools/ai-itinerary`) outputting structured daily timelines, costs, and gear advisories.
+   - Multi-lingual translation with strict Perso-Arabic Shahmukhi script enforcement for Punjabi.
+2. **Web Speech API & Continuous Voice Recognition**:
+   - Continuous hands-free keyword detection in **Women-Safe Mode** monitoring distress phrases (`Help`, `Madad`, `Save me`, `Bacho`).
+   - 1.8-second silence threshold auto-triggers translation and native speech audio synthesis.
+3. **Open-Meteo Real-Time Satellite Telemetry**:
+   - Live temperature, apparent heat index, weather codes, and hazard wind/rain alerts queried directly for alpine coordinates.
+4. **MyMemory & Offline Fallback Neural Dictionaries**:
+   - Multi-tier translation pipeline with instant local dictionary fallback when traveling through off-grid mountain passes.
+
+---
+
+## 👥 Team Roles & Contributions
+
+- **Ahsan Warraich** — **Team Lead, Full-Stack Developer & AI Engineer**
+  - **Concept & Architecture**: Conceived the altitude-aware intelligence model and emergency safety protocols.
+  - **Frontend Development**: Built the responsive Vite + React 19 UI, Leaflet map engine, Vibe Matcher, and Pocket Guide audio interface.
+  - **Backend & AI**: Developed the Express API, serverless Vercel endpoints, Gemini system prompt engineering, and geospatial query indexes.
+  - **Women's Safety Engineering**: Designed and implemented the automated voice listener, siren synthesizer, and dual WhatsApp/SMS dispatch system.
+
+---
+
+## ⚠️ Known Limitations & Future Roadmap
+
+1. **Cellular Hardware Disconnect**: In completely disconnected zones with zero cellular signal (e.g., deep Concordia/K2 base camp), cloud AI requests fall back to the built-in offline dictionary. A future native on-device LLM (Gemini Nano) will bring full conversational AI offline.
+2. **Satellite Transponder Integration**: Current live location uses device GPS coordinates; future iterations will integrate Garmin inReach and Thuraya satellite messenger webhooks.
+3. **Govt Road Closure APIs**: Road closures currently combine live Open-Meteo telemetry with crowdsourced traveler reports; integration with official National Highway Authority (NHA) APIs is planned for Phase 2.
+
+---
+
 ## 👨‍💻 Project Lead & Contact
 
 Developed with pride for Pakistan's travel and mountaineering community.
@@ -194,7 +234,7 @@ Developed with pride for Pakistan's travel and mountaineering community.
 - **Company**: Apex Wireframe Pvt Ltd
 - **Email**: [ahsansofficial8@gmail.com](mailto:ahsansofficial8@gmail.com)
 - **WhatsApp**: [+92 343 6030463](https://wa.me/923436030463)
-- **LinkedIn**: [Ahsan Warraich](https://www.linkedin.com/in/ahsan-warraich-1ab016405/)
+- **GitHub Repository**: [https://github.com/ahsansofficial8-cpu/RASSTAH-AI](https://github.com/ahsansofficial8-cpu/RASSTAH-AI)
 
 ---
 
